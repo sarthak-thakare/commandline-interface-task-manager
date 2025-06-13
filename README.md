@@ -29,7 +29,6 @@ A command-line based task manager built in C++ that lets you add, view, edit, se
 
 ### Requirements
 - A C++17 compatible compiler (`g++` recommended)
-- Git (optional, for cloning)
 
 ### Compile
 ```bash
