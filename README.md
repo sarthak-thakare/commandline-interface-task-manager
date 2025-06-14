@@ -1,35 +1,34 @@
-#  CLI Task Manager (C++)
+# CLI Task Manager
 
-A command-line based task manager built in C++ that lets you add, view, edit, search, and complete tasks — all stored persistently in a CSV file.
+A simple, interactive, and colorful command-line task manager built in C++.  
+Supports adding, editing, completing, deleting, and exporting tasks — all from your terminal!
 
-##  Features
+---
 
-- Add tasks with title, due date, and priority
-- List pending tasks, sorted by due date and priority
+## Features
+
+- Add tasks with **title**, **due date**, and **priority**
+- View pending and completed tasks in a **clean table format**
+- Edit task details (title, due date, priority)
+- Delete single or **all tasks with confirmation**
 - Mark tasks as completed
-- View completed task history
 - Search tasks by keyword
-- Edit task title, due date, or priority
-- Save/load tasks from a `.csv` file
-- Color-coded CLI and formatted output for readability
-- Command help menu
+- Show reminders for **today** and **tomorrow**
+- Export tasks to a `tasks.md` markdown file
+- Automatically loads/saves from `tasks.csv`
+- Gracefully saves tasks on Ctrl+C (SIGINT)
 
 ---
 
-##  Technologies Used
+##  Files
 
-- Language: C++17
-- File I/O: CSV file for persistent storage
-- CLI Styling: ANSI escape codes + `<iomanip>`
-- Version Control: Git
+| File        | Purpose                         |
+|-------------|---------------------------------|
+| `main.cpp`  | Source code for task manager    |
+| `tasks.csv` | Stores tasks persistently       |
+| `tasks.md`  | Markdown export of task list    |
 
 ---
 
-##  How to Build
-
-### Requirements
-- A C++17 compatible compiler (`g++` recommended)
-
-### Compile
-```bash
-g++ -std=c++17 main.cpp -o taskmgr
+## Compile:
+```bash g++ main.cpp -o tasker
