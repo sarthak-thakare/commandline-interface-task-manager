@@ -31,4 +31,5 @@ Supports adding, editing, completing, deleting, and exporting tasks — all from
 ---
 
 ## Compile:
-```bash g++ main.cpp -o tasker
+```bash
+ g++ main.cpp -o tasker
